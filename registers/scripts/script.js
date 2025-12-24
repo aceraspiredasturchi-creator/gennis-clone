@@ -2,7 +2,7 @@ function loginUser() {
 
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value; 
-    if (username === '' || password === '') {
+    if (username === ' ' || password === ' ') {
         alert('Iltimos, barcha maydonlarni to`ldiring.');
         return;
     }
