@@ -10,7 +10,7 @@ function handleSubmit(event) {
     console.log(username, password);
 
     if (username === my_username && password === my_parol) {
-        console.log("Kirish muvafaqiyatli");
+        console.log("Kirish muvafaqiyatli");    
     }
     else {
         error.textContent = "Ism yoki parol xato kiritildi";
