@@ -1,5 +1,5 @@
 const my_username = "Erlan";
-const my_parol = "12345";
+const my_parol = "12345678";
 
 function handleSubmit(event) {
     event.preventDefault();
