@@ -9,22 +9,17 @@
 <body>
 
 <header>
-  <div class="logo">🎓 Gennis</div>
+  <div style="display: flex; margin-top: 4px;" class="logo"><img style="width: 40px; height: 40px; margin-top: -8px;" src="./images/Screenshot_2026-01-06_161229.png" alt=""><p>Gennis</p> </div>
   <div class="user">Roziqov Dilmurod</div>
 </header>
 
 <div class="container">
-  <!-- SIDEBAR -->
   <div class="sidebar">
-    <button onclick="showPage('students')">🏠</button>
+    <button onclick="showPage('groups')">🏠</button>
+    <button onclick="showPage( 'students')">👥</button>
     <button onclick="showPage('profile')">👤</button>
-    <button onclick="showPage('groups')">👥</button>
   </div>
-
-  <!-- CONTENT -->
   <div class="content">
-
-    <!-- STUDENTS -->
     <div id="students" class="page active">
       <h2>O‘quvchilar ro‘yxati</h2>
       <table>
@@ -42,8 +37,6 @@
         </tr>
       </table>
     </div>
-
-    <!-- PROFILE -->
     <div id="profile" class="page">
       <h2>Foydalanuvchi ma’lumotlari</h2>
       <div class="card">
@@ -55,22 +48,18 @@
         <p><b>Tug‘ilgan sana:</b> 2002-12-27</p>
       </div>
     </div>
-
-    <!-- GROUPS -->
     <div id="groups" class="page">
       <h2>Mening guruhlarim</h2>
       <div class="groups">
-        <div class="group"><strong>I-Web001</strong>Dilmurod Roziqov</div>
-        <div class="group"><strong>I-Web002</strong>Dilmurod Roziqov</div>
-        <div class="group"><strong>I-Web003</strong>Dilmurod Roziqov</div>
-        <div class="group"><strong>D-Ind001</strong>Dilmurod Roziqov</div>
+        <div class="group"><strong>D-Web001</strong>Dilmurod Roziqov</div>
+        <div class="group"><strong>D-Web002</strong>Dilmurod Roziqov</div>
+        <div class="group"><strong>D-Web003</strong>Dilmurod Roziqov</div>
         <div class="group"><strong>D-Web004</strong>Dilmurod Roziqov</div>
+        <div class="group"><strong>D-Web005</strong>Dilmurod Roziqov</div>
       </div>
     </div>
-
   </div>
 </div>
-
 <script>
   function showPage(pageId) {
     document.querySelectorAll('.page').forEach(p => {
@@ -79,6 +68,5 @@
     document.getElementById(pageId).classList.add('active');
   }
 </script>
-
 </body>
 </html>
