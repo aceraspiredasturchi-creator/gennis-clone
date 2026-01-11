@@ -4,23 +4,23 @@
   <meta charset="UTF-8">
   <title>Gennis</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
 <header>
-  <div style="display: flex; margin-top: 4px;" class="logo"><img style="width: 40px; height: 40px; margin-top: -8px;" src="./images/Screenshot_2026-01-06_161229.png" alt=""><p>Gennis</p> </div>
+  <div class="logo" style="display: flex;"><img style="width: 40px; height: 40px; margin-top: -8px;" src="../images/Screenshot_2026-01-06_161229.png" alt=""><p>Gennis</p></div>
   <div class="user">Roziqov Dilmurod</div>
 </header>
 
 <div class="container">
   <div class="sidebar">
     <button onclick="showPage('groups')">🏠</button>
-    <button onclick="showPage( 'students')">👥</button>
+    <button onclick="showPage('students')">👥</button>
     <button onclick="showPage('profile')">👤</button>
   </div>
   <div class="content">
-    <div id="students" class="page active">
+    <div id="students" class="page">
       <h2>O‘quvchilar ro‘yxati</h2>
       <table>
         <tr>
@@ -48,7 +48,7 @@
         <p><b>Tug‘ilgan sana:</b> 2002-12-27</p>
       </div>
     </div>
-    <div id="groups" class="page">
+    <div id="groups" class="page active">
       <h2>Mening guruhlarim</h2>
       <div class="groups">
         <div class="group"><strong>D-Web001</strong>Dilmurod Roziqov</div>
@@ -60,6 +60,7 @@
     </div>
   </div>
 </div>
+
 <script>
   function showPage(pageId) {
     document.querySelectorAll('.page').forEach(p => {
