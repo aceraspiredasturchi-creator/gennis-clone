@@ -7,12 +7,10 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
 <header>
   <div class="logo" style="display: flex;"><img style="width: 40px; height: 40px; margin-top: -8px;" src="../images/Screenshot_2026-01-06_161229.png" alt=""><p>Gennis</p></div>
   <div class="user">Roziqov Dilmurod</div>
 </header>
-
 <div class="container">
   <div class="sidebar">
     <button onclick="showPage('groups')">🏠</button>
@@ -69,7 +67,6 @@
     document.getElementById(pageId).classList.add('active');
   }
 
-  // SAYT OCHILGANDA DEFAULT GROUPS BO'LIMI
   window.onload = () => {
     showPage('groups');
   }
